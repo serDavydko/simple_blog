@@ -142,13 +142,15 @@ label {
 }
 
 .add-post-input {
-  width: 96%;
+  width: 95%;
   font-size: 16px;
 }
 
 .add-post {
+  padding:0;
   padding-top: 10px;
   padding-bottom: 10px;
+
 }
 
 .add-post-submit {
@@ -158,4 +160,9 @@ label {
 
 .show-form-button {
   margin-bottom: 8px;
+}
+
+.submit-container {
+  margin-left: 60px;
+  margin-right: 40px;
 }

@@ -72,8 +72,8 @@ class PostListPage extends React.Component {
 
     return (
       <>
-        <ul className="post-container">
-          <li className="post-item add-post">
+
+          <div className="submit-container">
             <button
               className="show-form-button"
               onClick={this.handleShowAddPost}
@@ -116,8 +116,8 @@ class PostListPage extends React.Component {
                 </button>
               </form>
             )}
-          </li>
-
+          </div>
+          <ul className="post-container">
           {posts.map(post => (
             <Link to={`${match.path}/${post.id}`} className="link">
               <li className="post-item">

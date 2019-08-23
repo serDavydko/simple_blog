@@ -98,7 +98,7 @@ class PostPage extends React.Component {
             </form>
           </p>
           {comments.map(comment => (
-            <p>
+            <p className ="comment">
               {comment.body}
             </p>
           ))}
