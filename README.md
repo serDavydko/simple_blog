@@ -1,3 +1,3 @@
 # Message app
 
-[DEMO](https://serDavydko.github.io/messages_app)
+[DEMO](https://serDavydko.github.io/simple_blog)
