@@ -1,0 +1,161 @@
+body {
+  font-family: Roboto;
+}
+
+.App {
+  background-color: #dbdbdb;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.basic_link {
+  color: black;
+  font-size: 34px;
+}
+
+.basic_link:active {
+  color: grey;
+}
+
+ul {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  box-sizing: border-box;
+  list-style-type: none;
+  background-color: white;
+  max-width: 960px;
+  border-radius: 3px;
+  padding: 3px 20px;
+  margin: 8px;
+}
+
+li:focus {
+  background-color: aqua;
+}
+
+.header-container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  transition: all 0.4s ease-out;
+}
+
+.link:hover {
+  transform: scale(1.04);
+}
+
+.important {
+  color: red;
+  font-weight: 500;
+}
+
+span {
+  margin-right: 12px;
+}
+
+.topic {
+  background-color: grey;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
+
+.lds-hourglass {
+  display: inline-block;
+  margin: 25% 43%;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 6px;
+  box-sizing: border-box;
+  border: 26px solid grey;
+  border-color: grey transparent grey transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+label,
+textarea {
+  letter-spacing: 1px;
+}
+
+textarea {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 97%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.add-post-input {
+  width: 96%;
+  font-size: 16px;
+}
+
+.add-post {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.add-post-submit {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.show-form-button {
+  margin-bottom: 8px;
+}
